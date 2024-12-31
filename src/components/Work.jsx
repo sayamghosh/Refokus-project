@@ -4,12 +4,6 @@ import { useScroll, useMotionValueEvent } from "motion/react";
 export default function Work() {
   const [images, setImages] = useState([
     {
-      url: "https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      top: "54%",
-      left: "50%",
-      isActive: false,
-    },
-    {
       url: "https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       top: "50%",
       left: "52%",
@@ -35,7 +29,13 @@ export default function Work() {
     },
     {
       url: "https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      top: "47%",
+      top: "54%",
+      left: "50%",
+      isActive: false,
+    },
+    {
+      url: "https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      top: "60%",
       left: "50%",
       isActive: false,
     },
@@ -63,17 +63,20 @@ export default function Work() {
       case 1:
         showImage([0]);
         break;
-      case 2:
+      case 3:
         showImage([0,1]);
         break;
-      case 3:
+      case 5:
         showImage([0,1,2]);
         break;
-      case 4:
+      case 7:
         showImage([0,1,2,3]);
         break;
-      case 5:
+      case 9:
         showImage([0,1,2,3,4]);
+        break;
+      case 11:
+        showImage([0,1,2,3,4,5]);
         break;
     }
   });
@@ -88,7 +91,7 @@ export default function Work() {
           style={{ boxShadow: "0 0 0.2em #fc2d2d" }}
           className="inline-block w-3 h-3  rounded-full ml-8 bg-red-600"
         ></span>
-        <div className="absolute w-full h-full ">
+        <div className="absolute w-full h-full">
           {images.map((elem, index) =>
             elem.isActive ? (
               <img
