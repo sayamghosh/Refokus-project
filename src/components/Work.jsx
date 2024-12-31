@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Work() {
-  let images = [
+  const[images,setImages]=useState([
     {
       url: "https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       top: "54%",
@@ -38,7 +38,8 @@ export default function Work() {
       left: "50%",
       isActive: false,
     },
-  ];
+  ])
+  
   return (
     <div className="w-full mt-10">
       <div className="relative max-w-screen-xl mx-auto justify-center flex items-baseline">
