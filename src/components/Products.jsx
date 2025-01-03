@@ -44,18 +44,40 @@ export default function Products() {
   return (
     <div className="w-full relative">
       {products.map((item, index) => (
-        <Product key={index} index={index} data={item} setWindowPosition={setWindowPosition} />
+        <Product
+          key={index}
+          index={index}
+          data={item}
+          setWindowPosition={setWindowPosition}
+        />
       ))}
       <div className="w-full h-full absolute top-0 pointer-events-none ">
         <motion.div
           initial={{ y: position, x: "-50%" }}
-          animate={{ y: position+'rem', x: "-50%" }}
+          animate={{ y: position + "rem", x: "-50%" }}
+          transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
           className="window absolute left-[40%]  w-[30rem] h-[20rem] bg-white overflow-hidden"
         >
-          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-sky-400"></motion.div>
-          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-red-400"></motion.div>
-          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-yellow-400"></motion.div>
-          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-orange-400"></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            className="scene w-full h-full bg-sky-400"
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            className="scene w-full h-full bg-red-400"
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            className="scene w-full h-full bg-yellow-400"
+          ></motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            className="scene w-full h-full bg-orange-400"
+          ></motion.div>
         </motion.div>
       </div>
     </div>
