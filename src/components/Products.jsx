@@ -52,10 +52,10 @@ export default function Products() {
           animate={{ y: position+'rem', x: "-50%" }}
           className="window absolute left-[40%]  w-[30rem] h-[20rem] bg-white overflow-hidden"
         >
-          <div className="scene w-full h-full bg-sky-400"></div>
-          <div className="scene w-full h-full bg-red-400"></div>
-          <div className="scene w-full h-full bg-yellow-400"></div>
-          <div className="scene w-full h-full bg-orange-400"></div>
+          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-sky-400"></motion.div>
+          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-red-400"></motion.div>
+          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-yellow-400"></motion.div>
+          <motion.div animate={{y: -position+`rem`}} className="scene w-full h-full bg-orange-400"></motion.div>
         </motion.div>
       </div>
     </div>
