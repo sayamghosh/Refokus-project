@@ -60,22 +60,22 @@ export default function Products() {
         >
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.5}}
             className="scene w-full h-full bg-sky-400"
           ></motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.5}}
             className="scene w-full h-full bg-red-400"
           ></motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.5}}
             className="scene w-full h-full bg-yellow-400"
           ></motion.div>
           <motion.div
             animate={{ y: -position + `rem` }}
-            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.6}}
+            transition={{ease:[0.76, 0, 0.24, 1], duration: 0.5}}
             className="scene w-full h-full bg-orange-400"
           ></motion.div>
         </motion.div>

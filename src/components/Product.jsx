@@ -12,7 +12,7 @@ export default function Product({ data, setWindowPosition,index}) {
             {data.live && <Button />}
             {data.case && <Button title={"View Case Study"} />}
           </div>
-        </div>
+        </div> 
       </div>  
     </div>
   );
