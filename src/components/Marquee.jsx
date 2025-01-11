@@ -6,7 +6,7 @@ export default function Marquee({ data }) {
     <div className="w-full flex overflow-hidden gap-16">
       <motion.div
         initial={{ x: "0" }}
-        animate={{ x: "-100%" }}
+        animate={{ x: "-101%" }}
         transition={{
           duration: 10,
           ease: "linear",
@@ -20,7 +20,7 @@ export default function Marquee({ data }) {
       </motion.div>
       <motion.div
         initial={{ x: "0" }}
-        animate={{ x: "-100%" }}
+        animate={{ x: "-101%" }}
         transition={{
           duration: 10,
           ease: "linear",
@@ -32,6 +32,7 @@ export default function Marquee({ data }) {
           <img key={index} src={url} alt="marquee" className="w-28" />
         ))}
       </motion.div>
+      
       
     </div>
   );
