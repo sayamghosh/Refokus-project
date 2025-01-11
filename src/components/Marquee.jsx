@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function Marquee({ data }) {
+export default function Marquee({ data ,from, to }) {
   return (
     <div className="w-full flex overflow-hidden gap-16">
       <motion.div
-        initial={{ x: "0" }}
-        animate={{ x: "-101%" }}
+        initial={{ x: from }}
+        animate={{ x: to }}
         transition={{
-          duration: 10,
+          duration: 30,
           ease: "linear",
           repeat: Infinity,
         repeatType: "loop"}}
@@ -19,10 +19,10 @@ export default function Marquee({ data }) {
         ))}
       </motion.div>
       <motion.div
-        initial={{ x: "0" }}
-        animate={{ x: "-101%" }}
+        initial={{ x: from }}
+        animate={{ x: to }}
         transition={{
-          duration: 10,
+          duration: 30,
           ease: "linear",
           repeat: Infinity,
         repeatType: "loop"}}

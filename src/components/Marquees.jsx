@@ -42,9 +42,9 @@ export default function Marquees() {
     ]
   ]
   return (
-    <div className="w-full flex flex-col gap-10 py-32">
+    <div className="w-full mx-auto flex flex-col gap-10 py-32">
         {images.map((item,index)=>(
-            <Marquee data={item} key={index} />
+            index==0? <Marquee data={item} key={index} from={"0"} to={"-101%"}/>:<Marquee data={item} key={index} from={"-101%"} to={"1%"}/>
         ))}
         {/* <Marquee data={images[0]} /> */}
     </div>
